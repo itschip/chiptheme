@@ -29,3 +29,8 @@ function register_navwalker(){
 	require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+
+function wpdocs_custom_excerpt_length( $length ) {
+  return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

@@ -7,22 +7,24 @@
 
   <body <?php body_class();?>>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
-  <div class="navbar-nav">
-    <a class="navbar-brand" href="#"><?php echo get_bloginfo();?></a>
+    <header class="py-3 custom-header">
+      <div class="d-flex justify-content-center">
+        <h1 href="#"><?php echo get_bloginfo();?></h1>
+      </div>
+      <div class="d-flex justify-content-center">
         <?php
-        wp_nav_menu( array(
-            'theme_location'    => 'header-menu',
-            'depth'             => 2,
-            'container'         => 'div',
-            'container_class'   => 'collapse navbar-collapse',
-            'container_id'      => '',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'            => new WP_Bootstrap_Navwalker(),
-        ) );
-        ?>
-    </div>
-</nav>
+          wp_nav_menu( array(
+              'theme_location'    => 'header-menu',
+              'depth'             => 2,
+              'container'         => 'div',
+              'container_class'   => '',
+              'container_id'      => '',
+              'menu_class'        => 'd-flex nav',
+              'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+              'walker'            => new WP_Bootstrap_Navwalker(),
+          ) );
+          ?>
+        </div>
+    </header>
 
 
