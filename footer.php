@@ -1,3 +1,9 @@
+<?php
+
+  $links = array("Facebook", "Instagram", "Twitter");
+
+?>
+
 <footer class="page-footer font-small blue pt-4">
   <div class="container-fluid text-center text-md-left">
     <div class="row">
@@ -14,9 +20,12 @@
       </div>
 
       <ul class="list-unstyled">
-        <li>
-          <a href="#">Link 1</a>
-        </li>
+        <?php
+          foreach ($links as $link): array_map('htmlentities', $link); ?>
+            <li>
+              <a><?php echo $link;?></a>
+            </li>
+        <?php endforeach; ?>
       </ul>
       
 
