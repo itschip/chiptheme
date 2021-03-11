@@ -10,7 +10,6 @@ function load_stylesheets() {
   wp_enqueue_style('style');
 }
 
-
 add_action('wp_enqueue_scripts', 'load_stylesheets');
 // always remember semicolon
 
@@ -20,7 +19,6 @@ register_nav_menus(array(
   'header-menu' => __('Header Menu', 'theme'),
   'footer-menu' => __('Footer Menu', 'theme')
 ));
-
 
 /**
  * Register Custom Navigation Walker
