@@ -27,12 +27,9 @@
             </li>
         <?php endforeach; ?>
       </ul>
-      
 
     </div>
   </div>
 </footer>
-
-
 </body>
 </html>
