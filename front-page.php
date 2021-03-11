@@ -1,5 +1,4 @@
 <?php get_header();?>
-
 <div class="container mt-3">
   <h1 class="mb-5"><?php the_title();?></h1>
 
@@ -9,5 +8,4 @@
 
   <?php endwhile; endif;?>
 </div>
-
 <?php get_footer();?> 
