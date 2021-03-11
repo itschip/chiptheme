@@ -1,5 +1,4 @@
 <?php get_header();?>
-
 <div class="container">
   <h1 class='single-page-title text-muted'><?php the_title();?></h1>
 
@@ -10,8 +9,5 @@
     <?php the_content();?>
 
   <?php endwhile; endif;?>
-
-
 </div>
-
 <?php get_footer();?>
